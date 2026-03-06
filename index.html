@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gideon de la Cerna | Technical Support Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px
+        }
+
+        /* HERO */
+        .hero {
+            padding: 80px 0
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: 700
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5f5;
+            margin-top: 10px
+        }
+
+        .hero-buttons {
+            margin-top: 25px
+        }
+
+        .btn {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white
+        }
+
+        .btn-outline {
+            border: 1px solid #3b82f6;
+            color: #3b82f6
+        }
+
+        /* SECTIONS */
+        section {
+            margin-top: 70px
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px
+        }
+
+        /* CARDS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 22px;
+            border-radius: 14px;
+            transition: transform .2s, box-shadow .2s
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)
+        }
+
+        .card h3 {
+            margin-top: 0
+        }
+
+        /* EXPERIENCE */
+        .job {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 20px
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 18px
+        }
+
+        .job-date {
+            color: #94a3b8;
+            font-size: 14px;
+            margin: 5px 0 15px
+        }
+
+        ul {
+            padding-left: 20px
+        }
+
+        li {
+            margin-bottom: 6px
+        }
+
+        /* SKILL TAGS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .tag {
+            background: #1e40af;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px
+        }
+
+        .contact-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #94a3b8;
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Gideon de la Cerna</h1>
+            <p>Technical Support Specialist • SaaS Support • Application Support</p>
+            <p>Experienced in troubleshooting production systems, SaaS platforms, databases, and infrastructure issues
+                while delivering excellent customer support.</p>
+
+            <div class="hero-buttons">
+                <a class="btn btn-primary" href="mailto:gidz_delacerna@yahoo.com">Contact Me</a>
+                <a class="btn btn-outline" href="https://www.linkedin.com/in/gideon-de-la-cerna-b3152482/"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Technical Support Specialist with hands-on experience supporting SaaS and client-server applications in
+                production environments. I specialize in diagnosing complex technical issues across software,
+                networking, and database layers. My experience includes SQL troubleshooting, application servers, VPN
+                connectivity, and working with engineering teams to resolve product defects and system issues.
+            </p>
+            <p>
+                I enjoy solving technical problems, improving support processes, and helping customers get the most out
+                of the platforms they rely on every day.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>Support & Tools</h3>
+                    <div class="skills">
+                        <span class="tag">Salesforce</span>
+                        <span class="tag">Zendesk</span>
+                        <span class="tag">Remote Support</span>
+                        <span class="tag">VMware</span>
+                        <span class="tag">Hyper-V</span>
+                        <span class="tag">VPN</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Systems & Infrastructure</h3>
+                    <div class="skills">
+                        <span class="tag">Windows</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">OSI Model</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Databases</h3>
+                    <div class="skills">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Oracle 12c</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MSSQL</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Application & Web</h3>
+                    <div class="skills">
+                        <span class="tag">Apache Tomcat</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job">
+                <div class="job-title">Product Support Specialist — Navcast Inc.</div>
+                <div class="job-date">July 2023 – February 2025</div>
+                <ul>
+                    <li>Provided technical support for a SaaS-based Vessel Monitoring System (VMS).</li>
+                    <li>Troubleshot hardware, software, and connectivity issues while meeting SLA targets.</li>
+                    <li>Investigated system configuration, device functionality, and network connectivity issues.</li>
+                    <li>Managed RMAs, warranty cases, and hardware replacements through Salesforce.</li>
+                    <li>Collaborated with engineering teams to escalate and resolve product defects.</li>
+                    <li>Created internal documentation and knowledge base articles to improve team efficiency.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Solutions Support Specialist — ResortSuite (Agilysys)</div>
+                <div class="job-date">April 2022 – January 2023</div>
+                <ul>
+                    <li>Delivered Tier 1 and Tier 2 application support for hospitality SaaS and on-premise systems.
+                    </li>
+                    <li>Installed and configured Oracle 12c databases and Apache Tomcat servers.</li>
+                    <li>Executed SQL queries to investigate and resolve customer data issues.</li>
+                    <li>Connected to client environments via VPN for remote troubleshooting.</li>
+                    <li>Managed service requests and incidents using Zendesk and Salesforce.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Sheridan College</h3>
+                <p>Diploma — Computer Systems Technician (Software Engineering)</p>
+                <p>Graduated with Honours</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section>
+            <h2>Contact</h2>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <strong>Email</strong>
+                    <p>gidz_delacerna@yahoo.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <strong>Phone</strong>
+                    <p>647-785-2465</p>
+                </div>
+
+                <div class="contact-card">
+                    <strong>LinkedIn</strong>
+                    <p>linkedin.com/in/gideon-de-la-cerna-b3152482</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            © 2026 Gideon de la Cerna — Technical Support Portfolio
+        </footer>
+
+    </div>
+
+</body>
+
+
+</html>
