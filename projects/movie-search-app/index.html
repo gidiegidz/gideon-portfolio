@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <meta name="keywords" content="HTML, Webpage,CSS,JavaScript, Movie Search, Movie">
+    <meta name="description" content="Movie Search">
+    <meta name="Author" content="Gideon de la Cerna">
+    <meta http-equiv="refresh" content="60">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Search App</h1>
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+        <button id="searchBtn">Search</button>
+    </header>
+
+    <main id="movieResults">
+        <!-- Movie cards will be dynamically inserted here -->
+    </main>
+
+    <div id="movieModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalDetails" class="modal-body">
+                <div class="modal-poster">
+                    <img src="" alt="Movie Poster" id="modalPoster">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p><strong>Year:</strong> <span id="modalYear"></span></p>
+                    <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+                    <p><strong>Actors:</strong> <span id="modalActors"></span></p>
+                    <p><strong>Plot:</strong> <span id="modalPlot"></span></p>
+                    <p><strong>IMDB Rating:</strong> <span id="modalRating"></span></p>
+                    <button id="favoriteBtn">Add to Favorites</button><!--add-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+    </html>

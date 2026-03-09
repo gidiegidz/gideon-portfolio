@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <meta name="keywords" content="HTML, Webpage,CSS,JavaScript, Task Tracker">
+    <meta name="description" content="Task Tracker">
+    <meta name="Author" content="Gideon de la Cerna">
+    <meta http-equiv="refresh" content="60">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Task Tracker</h1>
+        <p>Manage your tasks efficiently!</p>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    </header>
+
+    <div id="spinner" class="spinner"></div>
+
+    <main>
+        <section class="task-input">
+            <div class="task-controls">
+                <input type="text" id="task-name" placeholder="Task name">
+                <select id="task-category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+                <button id="add-task">Add Task</button>
+            </div>
+        </section>
+
+        <section class="task-filter">
+            <label>Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <label>
+                <input type="checkbox" id="show-completed"> Show Completed
+            </label>
+        </section>
+
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-task-name"></h3>
+            <p><strong>Category:</strong> <span id="modal-task-category"></span></p>
+            <p><strong>Status:</strong> <span id="modal-task-status"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Task Tracker App</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
